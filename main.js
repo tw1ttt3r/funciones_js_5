@@ -70,3 +70,50 @@ do {
 while(siguiente.toLocaleLowerCase() === 's');
 alert("programa terminado")
 
+// funciones arrow function o funciones flecha
+// sintaxis: () => {}
+// ejemplo 
+// suma, resta, multiplicacion, division
+
+const calculadoraBasica = (operacion, num1, num2) => {
+    switch(operacion) {
+        case "suma":
+            return num1 + num2
+            break;
+        case "resta":
+            return num1 - num2
+            break;
+        case "multiplicacion":
+            return num1 * num2
+            break;
+        case "division":
+            return num1 / num2
+            break;
+        default:
+            return "Operacion no detectada"
+    }
+};
+
+const suma = (num1, num2) => num1 + num2;
+const resta = (num1, num2) => num1 - num2;
+const multiplicacion = (num1, num2) => num1 * num2;
+const division = (num1, num2) => num1 / num2;
+
+const calculadoraBasicaFlecha = (operacion, num1, num2) => {
+    switch(operacion) {
+        case "suma":
+            return suma(num1, num2)
+            break;
+        case "resta":
+            return resta(num1,num2)
+            break;
+        case "multiplicacion":
+            return multiplicacion(num1, num2)
+            break;
+        case "division":
+            return division(num1, num2)
+            break;
+        default:
+            return "Operacion no detectada"
+    }
+}
